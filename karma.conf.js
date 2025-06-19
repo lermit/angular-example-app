@@ -63,7 +63,7 @@ module.exports = function (config) {
       },
     },
     browsers: ['ChromeHeadlessNoSandbox'],
-    browserNoActivityTimeout: 60,
+    browserNoActivityTimeout: 60000,
     singleRun: true,
     watch: false,
     restartOnFileChange: true,
