@@ -48,7 +48,7 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
+    autoWatch: false,
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: 'Chrome',
@@ -63,7 +63,7 @@ module.exports = function (config) {
       },
     },
     browsers: ['ChromeHeadlessNoSandbox'],
-    browserNoActivityTimeout: 60000,
+    browserNoActivityTimeout: 60,
     singleRun: true,
     watch: false,
     restartOnFileChange: true,
