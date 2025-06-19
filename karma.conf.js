@@ -40,7 +40,10 @@ module.exports = function (config) {
       //   },
       // },
     },
-    reporters: ['progress', 'kjhtml', 'jasmine-seed'],
+    reporters: ['progress', 'kjhtml', 'jasmine-seed','junit'],
+    junitReporter: {
+        outputDir: 'test-reports',
+    },
     reportSlowerThan: 100,
     port: 9876,
     colors: true,
