@@ -48,7 +48,7 @@ module.exports = function (config) {
     autoWatch: true,
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
-        base: 'ChromeHeadless',
+        base: 'Chrome',
         flags: [
           '--no-sandbox',
           '--headless',
@@ -62,6 +62,7 @@ module.exports = function (config) {
     browsers: ['ChromeHeadlessNoSandbox'],
     browserNoActivityTimeout: 60000,
     singleRun: true,
+    watch: false,
     restartOnFileChange: true,
   });
 };
